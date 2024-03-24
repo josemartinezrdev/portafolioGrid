@@ -1,0 +1,218 @@
+/* IMPORTES */
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+/* VARIABLES */
+
+:root {
+  --first: #9ee6aa;
+  --second: #6bcba4;
+  --third: #08596a;
+  --bg: #08596a;
+  --underline: #085a6a4d;
+  --bd-first: #ff0000;
+  --bd-second: #14ff03;
+}
+
+/* GENERALES */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ETIQUETAS */
+
+body {
+  background-color: var(--bg);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+hr {
+  background-color: #6bcba4;
+  border: none;
+  border-radius: 10px;
+  width: 80%;
+  height: 4px;
+  margin: 10px 25px;
+}
+
+/* CLASES */
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: var(--first);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+/* PAG 1 */
+
+.div-foto {
+  display: flex;
+  justify-content: center;
+  padding: 15px 25px;
+}
+
+.img-perfil {
+  width: 60%;
+  border-radius: 100%;
+  border: 3px solid var(--second);
+}
+
+.img-perfil:hover {
+  border-radius: 10px;
+  border: 3px solid var(--third);
+}
+
+.target-info {
+  background-color: var(--second);
+  margin: 25px 25px;
+  padding: 100px 25px;
+  border-radius: 10px;
+}
+
+.item-info {
+  padding: 20px 25px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+.text {
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+.item-info:hover {
+  background-color: var(--third);
+  color: var(--first);
+}
+
+.reds {
+  font-size: 3rem;
+  margin: 25px;
+  border-radius: 100%;
+}
+
+.r {
+  border: 3px solid var(--first);
+  border-radius: 100%;
+}
+
+.reds:hover {
+  .r {
+    border: 3px solid var(--bd-first);
+    background-color: var(--second);
+  }
+}
+
+.reds:active {
+  .r {
+    border: 3px solid var(--bd-second);
+  }
+}
+
+/* PAG 2 */
+
+.cont {
+  margin: 15px 25px;
+}
+
+.sub {
+  background-color: var(--underline);
+}
+
+.div-btn {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+
+.btn {
+  background-color: var(--third);
+  color: var(--first);
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 3px solid var(--third);
+}
+
+.btn:hover {
+  background-color: var(--second);
+  color: var(--third);
+  border: 3px solid var(--bd-first);
+}
+
+.btn:active {
+  border: 3px solid var(--bd-second);
+}
+
+/* PAG 3 */
+
+.div-ingles {
+  margin: 10px;
+
+  .text {
+    padding: 3px 0px;
+  }
+}
+
+.div-logos {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-lg-top {
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.img-logo {
+  width: 25%;
+  border-radius: 100%;
+  border: 3px solid var(--first);
+}
+
+.img-logo:hover {
+  border: 3px solid var(--bd-first);
+  border-radius: 10px;
+}
+
+.img-logo:active {
+  border: 3px solid var(--bd-second);
+}
+
+@media (min-width: 900px) {
+  /* CLASES */
+
+  .grid-container {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .grid-item {
+    background-color: var(--first);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+}
